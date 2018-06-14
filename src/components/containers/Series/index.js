@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SeriesList from '../../containers/SeriesList/index';
+import SeriesList from '../../containers/SeriesList/SeriesList';
 import First from '../../../components/Intro/First';
 
 class Series extends Component {
@@ -53,6 +53,7 @@ class Series extends Component {
         {
            !isFetching && <SeriesList list={this.state.series} />
           }
+          
       </div>
     )
   }
