@@ -17,7 +17,6 @@ class SingleSeries extends Component {
 
   render() {
     const { show } = this.state;
-    console.log(show);
     return (
       <div>
         { show === null
@@ -36,8 +35,8 @@ class SingleSeries extends Component {
               </div>
           }
       </div>
-    )
-   }
+    );
+  }
 }
 
 export default SingleSeries;
