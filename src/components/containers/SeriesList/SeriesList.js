@@ -4,7 +4,7 @@ import './index.css';
 
 const SeriesListItem = ({series}) => (
   <li>
-      <Link to={`/series/${series.show.id}`}  >
+      <Link to={`/series/${series.show.id}`}>
         {series.show.name}
       </Link>
   </li>
@@ -19,7 +19,7 @@ const SeriesList = (props) => {
           ))}
         </ul>
       </div>
-    )
+    );
 }
 
 export default SeriesList;
