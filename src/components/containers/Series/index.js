@@ -43,7 +43,7 @@ class Series extends Component {
          !isFetching
            && series.length === 0
             && seriesName.trim() !== ''
-             && <p>No vehicles have been found</p>
+             && <p>No series have been found</p>
         }
 
          {
@@ -51,12 +51,13 @@ class Series extends Component {
         }
 
         {
-           !isFetching && <SeriesList list={this.state.series} />
+           !isFetching
+           &&
+           <SeriesList list={this.state.series} />
           }
-          
       </div>
-    )
+    );
   }
-}
+};
 
 export default Series;
